@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вилки</title>
+    <style>
+      :root {
+        --bg: #0d0b14;
+        --panel: #171127;
+        --accent: #ff3b6b;
+        --text: #f6efff;
+        --muted: #c3b9d8;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at 20% 20%, #2b0f45, var(--bg) 58%);
+        color: var(--text);
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      }
+      .card {
+        width: min(760px, 92vw);
+        border: 1px solid #5a2a81;
+        background: linear-gradient(180deg, rgba(255, 59, 107, 0.08), rgba(23, 17, 39, 0.9));
+        border-radius: 20px;
+        padding: 28px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 6vw, 3rem);
+      }
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+      .badge {
+        margin-top: 18px;
+        display: inline-block;
+        border: 1px solid #a03776;
+        color: #ffd6e3;
+        padding: 7px 12px;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      strong {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Вилки</h1>
+      <p>Starter website is live. Customize this page with your final design and content.</p>
+      <div class="badge">Deployed with <strong>GitHub + Railway</strong></div>
+    </main>
+  </body>
+</html>
